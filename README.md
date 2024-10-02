@@ -62,7 +62,7 @@ The shift from traditional vehicles to electric ones is becoming more evident, e
 EV Sales Trends Over Years:
 
 ```python
-Copy code
+
 sns.lineplot(data=df, x='year', y='value', hue='region')
 plt.title('EV Sales Trends Over Years')
 plt.show()
@@ -70,7 +70,7 @@ plt.show()
 EV Stock Share Distribution Across Regions:
 
 ```python
-Copy code
+
 sns.heatmap(data=df.pivot('region', 'year', 'value'), annot=True)
 plt.title('EV Stock Share Distribution Across Regions')
 plt.show()
